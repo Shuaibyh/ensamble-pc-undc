@@ -1,0 +1,13 @@
+Partes de un ordenador de sobremesa
+Autor: Proxecto cREAgal
+Fuente: https://skfb.ly/oQztw
+Licencia: Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+Adaptado para Laboratorio Interactivo de Hardware UNDC:
+compresión Meshopt, texturas hasta 2048 px, UV sin uso eliminadas,
+deduplicación exacta de vértices, separación pedagógica de componentes
+y contraparte simétrica del panel para cerrar el lado abierto.
+Las adaptaciones de este modelo se distribuyen bajo CC BY-NC-SA 4.0.
+Uso no comercial. Se requiere atribución y compartir las adaptaciones igual.
+Los recursos anteriores conservan sus propios autores y licencias.

@@ -1,0 +1,85 @@
+.manual-toolbar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  width: fit-content;
+  max-width: calc(100% - 20px);
+  padding: 10px 12px;
+  border: 1px solid #47758b;
+  border-radius: 10px;
+  background: #102438f2;
+  color: #eaf5ff;
+  pointer-events: auto;
+  font-size: 12px;
+}
+.manual-buttons,
+.manual-screws {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+.manual-toolbar button {
+  min-height: 36px;
+  padding: 7px 10px;
+  color: #eaf5ff;
+  border: 1px solid #5086a1;
+  background: #203d55;
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+}
+.manual-toolbar button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+.manual-toolbar button[draggable='true'] {
+  cursor: grab;
+}
+.manual-toolbar p {
+  margin: 8px 0 0;
+  max-width: 620px;
+  line-height: 1.4;
+}
+.manual-screws {
+  max-width: 520px;
+  max-height: 130px;
+  overflow: auto;
+}
+.manual-target {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 3px dashed #67dfff;
+  border-radius: 50%;
+  color: #d5f8ff;
+  font: bold 25px sans-serif;
+  background: #12384c88;
+}
+.manual-target.valid {
+  border-color: #55ffb1;
+  color: #55ffb1;
+}
+.screw-target {
+  width: 29px;
+  height: 29px;
+  font-size: 15px;
+  border-width: 2px;
+}
+.screw-target.selected {
+  background: #238895;
+  outline: 3px solid #fff;
+}
+button.screw-target {
+  cursor: pointer;
+  pointer-events: auto;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+}
+button.screw-target:disabled {
+  cursor: default;
+  opacity: 0.45;
+}

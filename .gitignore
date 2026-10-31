@@ -1,0 +1,12 @@
+﻿node_modules/
+dist/
+route_update.py
+*.log
+
+# Local Netlify folder
+.netlify
+*.pyc
+__pycache__/
+*.tsbuildinfo
+.vite/
+docs/qa-*/

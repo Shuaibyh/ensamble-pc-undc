@@ -1,0 +1,38 @@
+.assembly-drop-target {
+  width: 190px;
+  min-height: 92px;
+  display: grid;
+  gap: 5px;
+  padding: 12px;
+  text-align: center;
+  border: 2px dashed #59d8ff;
+  border-radius: 12px;
+  background: #102b43eb;
+  color: #e0f8ff;
+  font: 12px/1.35 system-ui;
+  box-shadow: 0 6px 20px #0007;
+  user-select: none;
+}
+.assembly-drop-target > span {
+  color: #70e7ff;
+  font-size: 22px;
+}
+.assembly-drop-target small {
+  font-size: 11px;
+}
+.assembly-drop-target.active {
+  width: 220px;
+  min-height: 112px;
+  background: #174766f2;
+  border-style: solid;
+  box-shadow: 0 0 22px #53d2ff66;
+}
+.assembly-drop-target.blocked {
+  border-color: #d7b473;
+}
+.part-card[draggable='true'] {
+  cursor: grab;
+}
+.part-card[draggable='true']:active {
+  cursor: grabbing;
+}

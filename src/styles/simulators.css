@@ -1,0 +1,326 @@
+/* Shared simulator shell and controls. Keep scene-specific geometry in its scene. */
+.catalog .part-card img {
+  width: 48px;
+  height: 52px;
+  object-fit: contain;
+}
+.simulator-header {
+  padding: 24px 0 18px;
+}
+.simulator-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.simulator-heading > div:first-child {
+  min-width: 0;
+  max-width: 780px;
+}
+.simulator-heading h1 {
+  margin: 8px 0;
+  font-size: clamp(26px, 2vw, 32px);
+  line-height: 1.2;
+}
+.simulator-heading p {
+  color: var(--muted);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  margin: 0;
+}
+.simulator-flow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 14px 0;
+  border-block: 1px solid var(--border);
+}
+.simulator-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-left: auto;
+}
+.simulator-flow .assembly-stages {
+  gap: 8px;
+}
+.simulator-flow .assembly-stages li {
+  min-height: 44px;
+  transition:
+    border-color 160ms,
+    background 160ms;
+}
+.simulator-flow .assembly-stages li.active {
+  background: #163c54;
+}
+.simulator-flow .assembly-stages li.done {
+  background: #17382f;
+}
+.simulator-heading .mode-control {
+  width: auto;
+}
+.simulator-heading .mode-switch {
+  display: flex;
+}
+.simulator-heading .mode-switch button {
+  min-width: 100px;
+}
+.camera-toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.camera-toolbar .button,
+.laptop-workspace .camera-toolbar .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 12px;
+  min-height: 44px;
+  font-size: var(--text-sm);
+  border-radius: var(--radius-sm);
+}
+.camera-toolbar .button.icon {
+  width: 44px;
+  padding: 10px;
+  flex: 0 0 44px;
+}
+.camera-toolbar svg,
+.panel-handle svg {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+}
+.panel-handle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.workspace .panel-heading,
+.laptop-workspace .panel-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 56px;
+  padding: 8px 12px;
+  margin: 0 0 12px;
+  border-bottom: 1px solid var(--border);
+}
+.workspace .panel-heading h2,
+.laptop-workspace .panel-heading h2 {
+  margin: 0;
+  font-size: var(--text-base);
+  flex: 1;
+}
+.panel-heading > span {
+  color: var(--muted);
+  font-size: var(--text-xs);
+}
+.panel-heading .panel-handle {
+  margin-left: auto;
+  flex: 0 0 44px;
+}
+.workspace .catalog,
+.laptop-workspace .laptop-catalog {
+  padding: 0 12px 16px;
+}
+.workspace .details-panel,
+.laptop-workspace .laptop-details {
+  display: block;
+}
+.workspace > .panel,
+.laptop-layout > .panel {
+  animation: feedback-enter 180ms ease-out;
+}
+.viewer-heading .panel-handle {
+  min-height: 36px;
+}
+.workspace,
+.laptop-workspace .laptop-layout {
+  gap: 12px;
+}
+.viewer-toolbar .scene-options {
+  align-items: center;
+}
+.button.secondary {
+  background: var(--raised);
+  border-color: var(--border);
+}
+.button.ghost {
+  background: transparent;
+}
+.button.danger {
+  color: #ffc2c2;
+}
+.button.danger:hover:enabled {
+  background: #492b37;
+  border-color: #cf7e89;
+}
+.details-content .detail-actions {
+  position: relative;
+}
+.simulator-trigger {
+  border: 1px solid var(--border);
+  background: var(--panel);
+}
+.simulator-trigger[data-active='true'] {
+  color: var(--text);
+  background: #214762;
+  border-color: var(--blue);
+}
+.setup-panel {
+  max-height: none;
+}
+.setup-viewer {
+  height: 720px;
+}
+.setup-panel .setup-connection {
+  padding: 10px;
+  gap: 6px 10px;
+}
+.setup-panel .setup-cable-copy small {
+  margin: 0;
+}
+.setup-panel .setup-cable-action {
+  text-decoration: none;
+}
+.landing .hero-station {
+  object-fit: cover;
+}
+@media (min-width: 1051px) {
+  .topbar {
+    flex-wrap: nowrap;
+    padding: 12px 24px;
+  }
+  .primary-nav {
+    order: initial;
+    width: auto;
+    margin-left: auto;
+    justify-content: flex-end;
+  }
+  .identity strong {
+    max-width: 370px;
+  }
+}
+@media (min-width: 1201px) {
+  .workspace {
+    grid-template-columns: 240px minmax(0, 1fr) 290px;
+  }
+  .workspace.catalog-collapsed {
+    grid-template-columns: minmax(0, 1fr) 290px;
+  }
+  .workspace.details-collapsed {
+    grid-template-columns: 240px minmax(0, 1fr);
+  }
+  .workspace.catalog-collapsed.details-collapsed {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .laptop-workspace .laptop-layout {
+    grid-template-columns: 248px minmax(0, 1fr) 248px;
+  }
+  .laptop-workspace .laptop-layout.hide-catalog {
+    grid-template-columns: minmax(0, 1fr) 248px;
+  }
+  .laptop-workspace .laptop-layout.hide-details {
+    grid-template-columns: 248px minmax(0, 1fr);
+  }
+  .laptop-workspace .laptop-layout.hide-catalog.hide-details {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .workspace > .panel,
+  .laptop-workspace .laptop-catalog,
+  .laptop-workspace .laptop-details {
+    max-height: 720px;
+  }
+  .workspace > .viewer,
+  .laptop-workspace .laptop-viewer {
+    height: 720px;
+    max-height: none;
+  }
+}
+@media (min-width: 721px) and (max-width: 1200px) {
+  .workspace,
+  .laptop-workspace .laptop-layout,
+  .workspace.details-collapsed,
+  .laptop-workspace .laptop-layout.hide-details {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+  }
+  .workspace.catalog-collapsed,
+  .laptop-workspace .laptop-layout.hide-catalog {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .workspace .details-panel,
+  .laptop-workspace .laptop-details {
+    grid-column: 1 / -1;
+    max-height: none;
+  }
+  .workspace .catalog,
+  .laptop-workspace .laptop-catalog {
+    max-height: 720px;
+  }
+}
+@media (max-width: 720px) {
+  .simulator-header {
+    padding: 20px 0 12px;
+  }
+  .simulator-heading {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .simulator-heading .mode-control {
+    align-self: flex-start;
+  }
+  .simulator-flow {
+    margin-top: 16px;
+    gap: 12px;
+  }
+  .simulator-flow .assembly-stages {
+    gap: 6px;
+  }
+  .simulator-flow .assembly-stages li {
+    padding: 6px 8px;
+  }
+  .simulator-actions {
+    width: 100%;
+    margin: 0;
+  }
+  .workspace > .viewer,
+  .laptop-workspace .laptop-viewer,
+  .setup-viewer {
+    height: auto;
+    max-height: none;
+  }
+  .workspace > .viewer .canvas-container,
+  .laptop-workspace .laptop-viewer .canvas-container,
+  .setup-viewer .canvas-container {
+    height: 380px;
+    min-height: 380px;
+    flex: none;
+  }
+  .viewer-heading {
+    gap: 8px;
+  }
+  .camera-toolbar .button {
+    flex-grow: 1;
+  }
+  .viewer-heading > span {
+    font-size: var(--text-xs);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .workspace > .panel,
+  .laptop-layout > .panel {
+    animation: none;
+  }
+  .simulator-flow .assembly-stages li {
+    transition: none;
+  }
+}

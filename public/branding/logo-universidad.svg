@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" role="img" aria-labelledby="title desc">
+  <title id="title">Universidad Nacional de Canete</title>
+  <desc id="desc">Escudo institucional de la Universidad Nacional de Canete</desc>
+  <path d="M28 87 100 26l72 61v53c0 37-28 62-72 74-44-12-72-37-72-74z" fill="#fff" stroke="#1b6c3a" stroke-width="5"/>
+  <path d="M31 91h138v53c0 35-27 59-69 70-42-11-69-35-69-70z" fill="#1a9a55"/>
+  <path d="M100 91h69v53c0 35-27 59-69 70z" fill="#b8171c"/>
+  <path d="M100 91 68 69h64z" fill="#fff"/>
+  <path d="M100 27 91 39l-14-3-2 15-14 6 9 12-5 14 15 1 9 12 11-9 11 9 9-12 15-1-5-14 9-12-14-6-2-15-14 3z" fill="#d09d25" stroke="#fff" stroke-width="4"/>
+  <circle cx="100" cy="141" r="27" fill="#fff" stroke="#17325f" stroke-width="3"/>
+  <path d="M73 141h54M100 114v54M80 122c13 8 27 8 40 0M80 160c13-8 27-8 40 0" fill="none" stroke="#17325f" stroke-width="2"/>
+  <path d="M19 103C9 124 9 156 28 180M181 103c10 21 10 53-9 77M22 118l-12-7m14 24-14-4m16 22-14 1m154-36 12-7m-14 24 14-4m-16 22 14 1" fill="none" stroke="#287848" stroke-width="5" stroke-linecap="round"/>
+  <path d="M24 42h152" stroke="#d09d25" stroke-width="9"/>
+  <text x="100" y="50" text-anchor="middle" fill="#17325f" font-family="Arial,sans-serif" font-size="8" font-weight="700">UNIVERSIDAD NACIONAL DE CANETE</text>
+  <text x="100" y="194" text-anchor="middle" fill="#17325f" font-family="Arial,sans-serif" font-size="7" font-weight="700">PRINCIPIO ACTIVO</text>
+</svg>

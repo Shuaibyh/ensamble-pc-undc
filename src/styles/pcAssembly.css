@@ -1,0 +1,14 @@
+@media (max-width: 720px) {
+  .workspace > .viewer {
+    height: auto;
+    max-height: none;
+  }
+  .workspace > .viewer .canvas-container {
+    flex: none;
+    height: 380px;
+    min-height: 380px;
+  }
+  .workspace > .viewer .viewer-toolbar {
+    flex-shrink: 0;
+  }
+}

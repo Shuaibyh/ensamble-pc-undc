@@ -1,0 +1,247 @@
+.guided-layout {
+  grid-template-columns: 260px minmax(0, 1fr) 300px;
+}
+.guided-viewer {
+  height: 720px;
+}
+.guided-inventory,
+.guided-details {
+  max-height: 720px;
+  overflow-y: auto;
+}
+.guided-canvas {
+  position: relative;
+  overflow: hidden;
+}
+.guided-mode-note {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: -8px 0 14px;
+  padding: 9px 13px;
+  border: 1px solid #315575;
+  border-radius: 8px;
+  color: #c9def0;
+  background: #102238;
+  font-size: 12px;
+}
+.guided-mode-note strong {
+  color: #68ddff;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.guided-help {
+  padding: 0 10px;
+  color: #bed2e5;
+  font-size: 12px;
+}
+.guided-card {
+  cursor: grab;
+  touch-action: none;
+}
+.guided-card:active,
+.guided-inventory-dragging {
+  cursor: grabbing;
+}
+.guided-card-icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  flex: 0 0 52px;
+  border: 1px solid #4b7597;
+  border-radius: 9px;
+  color: #72dcff;
+  background: #132b42;
+  font-size: 27px;
+}
+.guided-camera-bar,
+.guided-piece-toolbar {
+  position: absolute;
+  z-index: 6;
+  display: flex;
+  gap: 5px;
+  padding: 6px;
+  border: 1px solid #52799a;
+  border-radius: 11px;
+  background: #0b1929e8;
+  box-shadow: 0 8px 24px #02081388;
+  backdrop-filter: blur(8px);
+}
+.guided-camera-bar {
+  top: 12px;
+  right: 12px;
+}
+.guided-piece-toolbar {
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.guided-tool {
+  min-width: 50px;
+  min-height: 46px;
+  display: grid;
+  place-items: center;
+  gap: 2px;
+  padding: 5px 7px;
+  border: 1px solid #4c6d8c;
+  border-radius: 8px;
+  color: #dff3ff;
+  background: #183149;
+  font-size: 19px;
+}
+.guided-tool span {
+  font-size: 9px;
+  font-weight: 700;
+}
+.guided-tool:hover:enabled,
+.guided-tool[aria-pressed='true'] {
+  border-color: #65d8ff;
+  background: #24577a;
+}
+.guided-tool:disabled {
+  color: #71869a;
+  background: #172434;
+  opacity: 0.55;
+}
+.guided-primary {
+  border-color: #6ce7b0;
+  background: #17604d;
+}
+.guided-danger {
+  border-color: #9c5965;
+  color: #ffcbd1;
+  background: #4b2730;
+}
+.guided-drag-label {
+  display: block;
+  padding: 5px 8px;
+  border: 1px solid #79e3ff;
+  border-radius: 999px;
+  color: white;
+  background: #123954e8;
+  font: 11px/1.3 system-ui;
+  white-space: nowrap;
+}
+.guided-screw-label {
+  display: grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: #071624;
+  background: #6ce2ff;
+  font: 900 10px/1 system-ui;
+  pointer-events: none;
+}
+.guided-state {
+  display: inline-flex;
+  margin: 2px 0 14px;
+  padding: 6px 9px;
+  border: 1px solid #4b7597;
+  border-radius: 999px;
+  color: #bfeaff;
+  background: #17324b;
+  font-size: 11px;
+  font-weight: 700;
+}
+.guided-state.complete {
+  border-color: #51c990;
+  color: #c9f8df;
+  background: #174436;
+}
+.guided-message {
+  min-height: 72px;
+  padding: 10px;
+  border-left: 2px solid #64d8ff;
+  border-radius: 5px;
+  color: #d8ebf8;
+  background: #0d1d2f;
+}
+.guided-screw-panel,
+.guided-steps {
+  margin-top: 18px;
+  padding: 12px;
+  border: 1px solid #476886;
+  border-radius: 9px;
+  background: #102238;
+}
+.guided-screw-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin: 9px 0;
+}
+.guided-screw-grid span {
+  padding: 6px;
+  border: 1px solid #425d78;
+  border-radius: 6px;
+  color: #c5d3df;
+  font-size: 10px;
+}
+.guided-screw-grid span.fixed {
+  border-color: #4cc894;
+  color: #b9f7dc;
+  background: #17483c;
+}
+.guided-screw-panel small {
+  color: #aebfd0;
+  line-height: 1.5;
+}
+.guided-steps ol {
+  margin-bottom: 0;
+  padding-left: 18px;
+  color: #c2d2e1;
+  font-size: 11px;
+}
+.guided-inventory-ghost {
+  position: fixed;
+  z-index: 300;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 9px 12px;
+  border: 1px solid #78ddff;
+  border-radius: 9px;
+  color: white;
+  background: #122c44ee;
+  box-shadow: 0 10px 30px #020a14aa;
+  font-size: 12px;
+  font-weight: 700;
+  pointer-events: none;
+}
+.guided-inventory-ghost span {
+  color: #6fe3ff;
+  font-size: 21px;
+}
+@media (max-width: 1180px) {
+  .guided-layout {
+    grid-template-columns: 230px minmax(0, 1fr);
+  }
+  .guided-details {
+    grid-column: 1/-1;
+    max-height: none;
+  }
+}
+@media (max-width: 720px) {
+  .guided-layout {
+    display: flex;
+    flex-direction: column;
+  }
+  .guided-viewer {
+    order: -1;
+    height: 620px;
+  }
+  .guided-camera-bar {
+    right: 7px;
+    left: 7px;
+    overflow-x: auto;
+  }
+  .guided-piece-toolbar {
+    right: 7px;
+    left: 7px;
+    transform: none;
+    overflow-x: auto;
+  }
+}

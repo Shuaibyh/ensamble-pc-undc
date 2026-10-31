@@ -1,0 +1,320 @@
+{
+  "project": "UNDC - Laboratorio Interactivo de Hardware 3D",
+  "version": "0.8",
+  "status": "EXPORT_OK",
+  "input": "Gabinete_ATX_UNDC_v07_CERRADO.blend",
+  "blend_output": "C:\\Users\\USUARIO\\Documents\\LabHardware3D\\Gabinete_ATX_UNDC_v08_FANS_ARGB.blend",
+  "export_dir": "C:\\Users\\USUARIO\\Documents\\LabHardware3D\\EXPORT_UNDC_v08_ARGB",
+  "blender_version": "5.2.1 LTS",
+  "official_reference": {
+    "name": "Corsair RS120 ARGB",
+    "sku": "CO-9050180-WW",
+    "size_mm": [
+      120,
+      25,
+      120
+    ],
+    "argb_leds": 8,
+    "pwm_pins": 4,
+    "argb_voltage": 5,
+    "mounting_screws_per_unit": 4,
+    "official_url": "https://www.corsair.com/es/es/p/120mm-fans/co-9050180-ww/rs120-argb-120mm-pwm-fan-co-9050180-ww"
+  },
+  "source_geometry_accuracy": "stylized educational reference, NOT commercial CAD",
+  "legacy_front_fan_objects_hidden_count": 75,
+  "fan_roots": [
+    {
+      "fan_number": 1,
+      "root": "UNDC_FAN_V08_01_ROOT",
+      "rotor": "UNDC_FAN_V08_01_ROTOR_ANIMABLE",
+      "installed_xyz_blender_m": [
+        0,
+        -0.196,
+        0.106
+      ],
+      "installed_xyz_gltf_m": [
+        0,
+        0.106,
+        0.196
+      ],
+      "mounting_screws": [
+        {
+          "root": "UNDC_V08_FAN_01_TORNILLO_01_ROOT",
+          "installed_xyz_blender_m": [
+            -0.0525,
+            -0.209,
+            0.0535
+          ],
+          "hole_position_on_fan_local_xyz_m": [
+            -0.0525,
+            -0.0125,
+            -0.0525
+          ],
+          "target_verified": false
+        },
+        {
+          "root": "UNDC_V08_FAN_01_TORNILLO_02_ROOT",
+          "installed_xyz_blender_m": [
+            -0.0525,
+            -0.209,
+            0.1585
+          ],
+          "hole_position_on_fan_local_xyz_m": [
+            -0.0525,
+            -0.0125,
+            0.0525
+          ],
+          "target_verified": false
+        },
+        {
+          "root": "UNDC_V08_FAN_01_TORNILLO_03_ROOT",
+          "installed_xyz_blender_m": [
+            0.0525,
+            -0.209,
+            0.0535
+          ],
+          "hole_position_on_fan_local_xyz_m": [
+            0.0525,
+            -0.0125,
+            -0.0525
+          ],
+          "target_verified": false
+        },
+        {
+          "root": "UNDC_V08_FAN_01_TORNILLO_04_ROOT",
+          "installed_xyz_blender_m": [
+            0.0525,
+            -0.209,
+            0.1585
+          ],
+          "hole_position_on_fan_local_xyz_m": [
+            0.0525,
+            -0.0125,
+            0.0525
+          ],
+          "target_verified": false
+        }
+      ],
+      "hole_spacing_mm_assumed_not_manufacturer_verified": 105
+    },
+    {
+      "fan_number": 2,
+      "root": "UNDC_FAN_V08_02_ROOT",
+      "rotor": "UNDC_FAN_V08_02_ROTOR_ANIMABLE",
+      "installed_xyz_blender_m": [
+        0,
+        -0.196,
+        0.226
+      ],
+      "installed_xyz_gltf_m": [
+        0,
+        0.226,
+        0.196
+      ],
+      "mounting_screws": [
+        {
+          "root": "UNDC_V08_FAN_02_TORNILLO_01_ROOT",
+          "installed_xyz_blender_m": [
+            -0.0525,
+            -0.209,
+            0.1735
+          ],
+          "hole_position_on_fan_local_xyz_m": [
+            -0.0525,
+            -0.0125,
+            -0.0525
+          ],
+          "target_verified": false
+        },
+        {
+          "root": "UNDC_V08_FAN_02_TORNILLO_02_ROOT",
+          "installed_xyz_blender_m": [
+            -0.0525,
+            -0.209,
+            0.2785
+          ],
+          "hole_position_on_fan_local_xyz_m": [
+            -0.0525,
+            -0.0125,
+            0.0525
+          ],
+          "target_verified": false
+        },
+        {
+          "root": "UNDC_V08_FAN_02_TORNILLO_03_ROOT",
+          "installed_xyz_blender_m": [
+            0.0525,
+            -0.209,
+            0.1735
+          ],
+          "hole_position_on_fan_local_xyz_m": [
+            0.0525,
+            -0.0125,
+            -0.0525
+          ],
+          "target_verified": false
+        },
+        {
+          "root": "UNDC_V08_FAN_02_TORNILLO_04_ROOT",
+          "installed_xyz_blender_m": [
+            0.0525,
+            -0.209,
+            0.2785
+          ],
+          "hole_position_on_fan_local_xyz_m": [
+            0.0525,
+            -0.0125,
+            0.0525
+          ],
+          "target_verified": false
+        }
+      ],
+      "hole_spacing_mm_assumed_not_manufacturer_verified": 105
+    },
+    {
+      "fan_number": 3,
+      "root": "UNDC_FAN_V08_03_ROOT",
+      "rotor": "UNDC_FAN_V08_03_ROTOR_ANIMABLE",
+      "installed_xyz_blender_m": [
+        0,
+        -0.196,
+        0.346
+      ],
+      "installed_xyz_gltf_m": [
+        0,
+        0.346,
+        0.196
+      ],
+      "mounting_screws": [
+        {
+          "root": "UNDC_V08_FAN_03_TORNILLO_01_ROOT",
+          "installed_xyz_blender_m": [
+            -0.0525,
+            -0.209,
+            0.2935
+          ],
+          "hole_position_on_fan_local_xyz_m": [
+            -0.0525,
+            -0.0125,
+            -0.0525
+          ],
+          "target_verified": false
+        },
+        {
+          "root": "UNDC_V08_FAN_03_TORNILLO_02_ROOT",
+          "installed_xyz_blender_m": [
+            -0.0525,
+            -0.209,
+            0.3985
+          ],
+          "hole_position_on_fan_local_xyz_m": [
+            -0.0525,
+            -0.0125,
+            0.0525
+          ],
+          "target_verified": false
+        },
+        {
+          "root": "UNDC_V08_FAN_03_TORNILLO_03_ROOT",
+          "installed_xyz_blender_m": [
+            0.0525,
+            -0.209,
+            0.2935
+          ],
+          "hole_position_on_fan_local_xyz_m": [
+            0.0525,
+            -0.0125,
+            -0.0525
+          ],
+          "target_verified": false
+        },
+        {
+          "root": "UNDC_V08_FAN_03_TORNILLO_04_ROOT",
+          "installed_xyz_blender_m": [
+            0.0525,
+            -0.209,
+            0.3985
+          ],
+          "hole_position_on_fan_local_xyz_m": [
+            0.0525,
+            -0.0125,
+            0.0525
+          ],
+          "target_verified": false
+        }
+      ],
+      "hole_spacing_mm_assumed_not_manufacturer_verified": 105
+    }
+  ],
+  "screw_roots_count": 12,
+  "exported": {
+    "case": {
+      "name": "UNDC_GABINETE_SIN_FANS_v08.glb",
+      "bytes": 1350684,
+      "mesh_count": 296,
+      "node_count": 296,
+      "expected_root": null,
+      "root_ok": true
+    },
+    "fan_01": {
+      "name": "UNDC_FAN_FRONTAL_01_ARGB_v08.glb",
+      "bytes": 1007596,
+      "mesh_count": 59,
+      "node_count": 61,
+      "expected_root": "UNDC_FAN_V08_01_ROOT",
+      "root_ok": true
+    },
+    "fan_02": {
+      "name": "UNDC_FAN_FRONTAL_02_ARGB_v08.glb",
+      "bytes": 1007596,
+      "mesh_count": 59,
+      "node_count": 61,
+      "expected_root": "UNDC_FAN_V08_02_ROOT",
+      "root_ok": true
+    },
+    "fan_03": {
+      "name": "UNDC_FAN_FRONTAL_03_ARGB_v08.glb",
+      "bytes": 1007596,
+      "mesh_count": 59,
+      "node_count": 61,
+      "expected_root": "UNDC_FAN_V08_03_ROOT",
+      "root_ok": true
+    },
+    "screw_template": {
+      "name": "UNDC_TORNILLO_FAN_TIPO_v08.glb",
+      "bytes": 14612,
+      "mesh_count": 4,
+      "node_count": 5,
+      "expected_root": "UNDC_V08_FAN_01_TORNILLO_01_ROOT",
+      "root_ok": true
+    },
+    "preview": {
+      "name": "UNDC_PREVIEW_FANS_INSTALADOS_v08.glb",
+      "bytes": 5137144,
+      "mesh_count": 690,
+      "node_count": 710,
+      "expected_root": "UNDC_FAN_V08_01_ROOT",
+      "root_ok": true
+    }
+  },
+  "web_requirements": [
+    "Load case without fans, then three separate fan GLBs.",
+    "Each fan drag and snap to installed_xyz_gltf_m in manifest.",
+    "Validate orientation and mounting hole before insertion.",
+    "Use screw template 12 times with transform from manifest.",
+    "Only rotate each named _ROTOR_ANIMABLE after PWM power connection.",
+    "Change the eight LED materials after correct 5V ARGB connection.",
+    "Allow color selection and power off; RGB preview is illustrative.",
+    "Install fan power and ARGB cables in later web stage."
+  ],
+  "limitations": [
+    "Hole pitch 105mm is provisional and NOT checked against exact SKU drawing.",
+    "Fan blades and RGB diffuser are stylized, not exact commercial CAD.",
+    "Cable tails are decorative and have no final pinout or physics.",
+    "No collision or snap interactions implemented in Blender.",
+    "Top and rear fans are still pending.",
+    "Panels v0.7 remain separate; preview omits them for visibility.",
+    "Do not treat export success as visual/mechanical certification."
+  ],
+  "error": null
+}

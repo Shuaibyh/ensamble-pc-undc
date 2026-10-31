@@ -32,7 +32,7 @@ Archivos modificados:
 Validación: build y lint correctos; 84/84 tests pasan. Comprobados doble clic,
 selección sin instalar, contador al completar animación, índices inválidos,
 reinicio, bloqueo de estación y encendido, retirada y reinstalación.
-Modelos GLB, lógica de alineación de piezas y Beta ARGB conservados (hashes iguales).
+Modelos GLB compartidos y lógica de alineación de piezas conservados (hashes iguales).
 El servidor local sirve el módulo actualizado en el puerto 5173.
 Pendiente: prueba visual de interacción, porque el navegador automatizado no estaba disponible.
 

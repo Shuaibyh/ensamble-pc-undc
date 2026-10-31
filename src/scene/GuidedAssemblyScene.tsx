@@ -11,10 +11,11 @@ import {
 } from '../data/guidedAssembly';
 import { pcModel, type PcGroupId } from '../data/pcModel';
 import { laptopModelPath } from '../data/laptop';
-import { fanScrewPath } from '../data/fansArgb';
 import { preparePcModel } from './preparePcModel';
 import { prepareAssemblyLaptop } from './prepareAssemblyLaptop';
 import { Global3DLoader } from '../components/ui/Global3DLoader';
+
+const fanScrewPath = '/models/cooling/UNDC_TORNILLO_FAN_TIPO_v08.glb';
 
 export type GuidedCameraMode = 'guided' | 'free';
 export type GuidedCameraAction = 'home' | 'front' | 'top' | 'focus' | 'screw';

@@ -33,11 +33,6 @@ const LaptopWorkspace = lazy(() =>
     default: module.LaptopWorkspace,
   })),
 );
-const FansArgbWorkspace = lazy(() =>
-  import('./features/fans/FansArgbWorkspace').then((module) => ({
-    default: module.FansArgbWorkspace,
-  })),
-);
 const Scene = lazy(() => import('./scene/PcScene'));
 const ReceivedCaseViewer = lazy(() => import('./scene/ReceivedCaseViewer'));
 function initialView(): AppView {
@@ -294,26 +289,6 @@ export default function App() {
         >
           <Suspense fallback={<Global3DLoader variant="library" />}>
             <ReceivedCaseViewer onReturn={() => openView('home')} />
-          </Suspense>
-        </ErrorBoundary>
-      )}
-      {view === 'fans' && (
-        <ErrorBoundary
-          fallback={
-            <div className="scene-fallback" role="alert">
-              No se pudo abrir Ventiladores ARGB (Beta).{' '}
-              <button className="button" onClick={() => window.location.reload()}>
-                Reintentar
-              </button>
-            </div>
-          }
-        >
-          <Suspense
-            fallback={
-              <Global3DLoader variant="model" status="Preparando Ventiladores ARGB (Beta)..." />
-            }
-          >
-            <FansArgbWorkspace onReturn={() => openView('assembly')} />
           </Suspense>
         </ErrorBoundary>
       )}

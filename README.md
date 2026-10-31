@@ -1,6 +1,6 @@
 # Simulador 3D de Ensamblaje de PC — UNDC
 
-Aplicación educativa ejecutada completamente en el navegador para explorar hardware y practicar el ensamblaje guiado de una PC, una laptop, una estación completa y ventiladores ARGB. No usa backend ni recopila datos personales.
+Aplicación educativa ejecutada completamente en el navegador para explorar hardware y practicar el ensamblaje guiado de una PC, una laptop y una estación completa. No usa backend ni recopila datos personales.
 
 ## Demo
 
@@ -13,7 +13,7 @@ Aplicación educativa ejecutada completamente en el navegador para explorar hard
 - Navegación entre inicio, biblioteca de modelos y simuladores.
 - Ensamblaje guiado y modo práctica con validaciones de orden y retroalimentación.
 - Escenas 3D con cámara orbital, enfoque, zoom y controles adaptados a pantallas pequeñas.
-- Montaje de PC, laptop, estación periférica y ventiladores ARGB.
+- Montaje de PC, laptop y estación periférica.
 - Colocación de piezas y tornillos, conexiones internas y externas, animaciones y progreso persistente local.
 - Indicadores globales de carga y recuperación visual cuando falla un recurso 3D.
 

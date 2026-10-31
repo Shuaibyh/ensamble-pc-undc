@@ -148,14 +148,14 @@ def main():
         assert browser.js("[...document.querySelectorAll('.module-card h3')].map(e=>e.textContent)") == ['Ensamblar PC', 'Ensamblar laptop', 'Explorar modelos']
         assert browser.js("document.querySelector('.project-metrics').textContent.replace(/\\s+/g, ' ').includes('3 experiencias')")
         browser.click('Simuladores')
-        assert browser.js("document.querySelectorAll('.simulator-dropdown a').length") == 4
+        assert browser.js("document.querySelectorAll('.simulator-dropdown a').length") == 3
         browser.click('Simuladores')
         for width in [1440, 900, 390]:
             browser.viewport(width)
             browser.js("document.querySelector('#experiencias').scrollIntoView()")
             assert browser.js('document.documentElement.scrollWidth <= innerWidth'), f'Overflow at {width}'
             browser.screenshot(f'landing-{width}')
-        checks.append('Landing: 3 cards, 4 menu entries including ARGB beta, metric, responsive 1440/900/390')
+        checks.append('Landing: 3 cards, 3 menu entries, metric, responsive 1440/900/390')
         browser.viewport(1440)
         browser.js('scrollTo(0,0)')
         browser.click('Comenzar')

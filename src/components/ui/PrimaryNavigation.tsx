@@ -4,7 +4,6 @@ import { viewPaths, type AppView, type HomeSection } from '../../navigation';
 const modules = [
   ['assembly', 'Ensamblar PC', 'Ensamblaje, conexiones y encendido'],
   ['laptop', 'Ensamblar laptop', 'Interior, conexiones y cierre'],
-  ['fans', 'Ventiladores ARGB (Beta)', 'Arrastre, fijaciones y vista RGB'],
   ['library', 'Explorar modelos', 'Recursos, autores y licencias'],
 ] as const;
 const sections: [HomeSection, string][] = [

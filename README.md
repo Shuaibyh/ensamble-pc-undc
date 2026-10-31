@@ -4,7 +4,7 @@ Aplicación educativa ejecutada completamente en el navegador para explorar hard
 
 ## Demo
 
-La URL pública se añadirá aquí después del primer despliegue de Netlify.
+[Abrir el simulador publicado](https://ensamble-pc-undc.netlify.app/)
 
 ![Vista principal del simulador](public/landing/previews/ensamblar-pc.png)
 
